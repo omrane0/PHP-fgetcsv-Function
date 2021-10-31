@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$file = fopen("test.txt","r");
+while(! feof($file))
+  {
+  echo fgets($file). "<br />";
+  }
+fclose($file);
+?>
+
+</body>
+</html>
+
+
+
+Hello, this is a test file.
+There are three lines here.
+This is the last line.
